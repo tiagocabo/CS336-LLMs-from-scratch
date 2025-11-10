@@ -36,6 +36,18 @@ wheels = [
 ]
 
 [[package]]
+name = "bpetokenizer"
+version = "1.2.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "regex" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/66/f6/92b3986e527e712d7501a59a445432184b57dea18928a8ac642f9070fc67/bpetokenizer-1.2.1.tar.gz", hash = "sha256:593cde30cc9de777c55a10ba91885ebbd05cd8ac95593a81d1b81f1e7a62af40", size = 250255, upload-time = "2024-06-06T18:34:56.958Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/aa/e8/ba20b383752b8acc3eb0440b263e5c44e2286f749fb5133b99ba7ff1f4ba/bpetokenizer-1.2.1-py3-none-any.whl", hash = "sha256:560a97281d7f79c57a8e404ca1fd478e84c37a6e87138133d0f7c8c05d963149", size = 247829, upload-time = "2024-06-06T18:34:54.795Z" },
+]
+
+[[package]]
 name = "certifi"
 version = "2025.10.5"
 source = { registry = "https://pypi.org/simple" }
@@ -144,6 +156,7 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "black" },
+    { name = "bpetokenizer" },
     { name = "tokenizer" },
     { name = "torch" },
     { name = "transformers" },
@@ -152,6 +165,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "black", specifier = ">=25.9.0" },
+    { name = "bpetokenizer", specifier = ">=1.2.1" },
     { name = "tokenizer", specifier = ">=3.5.3" },
     { name = "torch", specifier = ">=2.9.0" },
     { name = "transformers", specifier = ">=4.57.1" },
